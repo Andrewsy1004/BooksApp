@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://backend-movie-two.vercel.app/:1",
+      "headers": {
+        "Host": "backend-movie-two.vercel.app"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
